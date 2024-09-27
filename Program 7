@@ -1,0 +1,14 @@
+s=input()
+a='aeiou' 
+D={ }
+mx=0
+for i in s:
+    if i in a:
+        if i in D:
+            D[i]+=1
+        else:
+            D[i]=1
+        if D[i]>mx:
+            mx=D[i]
+            answer=i
+print(answer)

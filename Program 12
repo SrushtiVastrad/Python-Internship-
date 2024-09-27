@@ -1,0 +1,25 @@
+def next_prime(N):
+  M = N + 1
+
+  
+  while True:
+    
+    is_prime = True
+    for i in range(2, int(M**0.5) + 1):
+      if M % i == 0:
+        is_prime = False
+        break
+
+    
+    if is_prime:
+      return M
+
+    
+    M += 1
+
+N = int(input())
+
+answer = next_prime(N)
+
+
+print(answer)

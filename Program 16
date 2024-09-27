@@ -1,0 +1,13 @@
+import math
+
+def gcd(a, b):
+    return math.gcd(a, b)
+
+def LCM(a, b):
+    return (a * b) // gcd(a, b)
+a, b = map(int, input().split())
+gcd_value = gcd(a, b)
+LCM_value = LCM(a, b)
+
+print(gcd_value)
+print(LCM_value)

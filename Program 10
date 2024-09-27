@@ -1,0 +1,12 @@
+def count_triplets_with_product(arr, n, m):
+    count = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            for s in range(j + 1, n):
+                if arr[i] * arr[j] * arr[s] == m:
+                    count += 1
+    return count
+n = int(input())  
+arr = list(map(int, input().split()))  
+m = int(input())  
+print(count_triplets_with_product(arr, n, m))

@@ -1,0 +1,6 @@
+a=input()
+P=int(input())
+K=int(input())
+s=max(0,P-K-1)
+b=min(len(a),P+K)
+print(min(a[s:b]))

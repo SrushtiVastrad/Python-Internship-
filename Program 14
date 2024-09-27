@@ -1,0 +1,12 @@
+def encode_number(N):
+    str_N = str(N)
+    encoded_string = ""
+    
+    for digit in str_N:
+        squared_digit = int(digit) ** 2  
+        encoded_string += str(squared_digit)  
+    encoded_value = int(encoded_string)
+    return encoded_value
+N = int(input())
+answer = encode_number(N)
+print(answer)

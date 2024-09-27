@@ -1,0 +1,5 @@
+def count_spaces(S):
+    return S.count(' ')
+S =input()
+count_of_number_of_spaces = count_spaces(S)
+print(count_of_number_of_spaces)

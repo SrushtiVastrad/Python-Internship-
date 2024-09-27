@@ -1,0 +1,12 @@
+def find_farthest_coordinate(A):
+  current_pos = 0
+  max_distance = 0
+
+  for i in range(len(A)):
+    current_pos += A[i]
+    max_distance = max(max_distance, abs(current_pos))
+
+  return max_distance
+A = list(map(int,input(). split()))
+answer = find_farthest_coordinate(A)
+print(answer)

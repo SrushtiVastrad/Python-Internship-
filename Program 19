@@ -1,0 +1,8 @@
+def reverse(string):
+    words = string.split()  
+    words.reverse()  
+    reversed_string = " ".join(words)  
+    return reversed_string
+input_string = input()
+reversed_string = reverse(input_string)
+print(reversed_string)
